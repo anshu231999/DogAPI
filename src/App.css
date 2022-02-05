@@ -1,5 +1,45 @@
-.App {
-  text-align: center;
+
+
+.App{
+   
+   margin: 10px;
+  padding: 5px;
+ 
+}
+.container{
+ 
+   border: 10px;
+   display: flex;
+   row-gap: 5px;
+   padding: 10px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   column-gap: 10px;
+   
+}
+p{
+   
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.val{
+  
+  width:100px;
+  margin: 10px;
+  
+  
+  
+}
+.img
+{
+   background-image: url("add.jpg");
+   background-size: cover;
+   position: relative;
+   background-repeat: no-repeat;
+   width: 220px;
+   height: 150px;
+   border-radius: 8px;
 }
 
 .App-logo {
@@ -11,6 +51,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+@media screen and (max-width:600px){
+   .container{
+     justify-content: space-evenly;
+   }
 }
 
 .App-header {
