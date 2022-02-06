@@ -9,7 +9,7 @@
 .container{
  
    border: 10px;
-   display: flex;
+  display: flex;
    row-gap: 5px;
    padding: 10px;
    flex-direction: row;
@@ -38,7 +38,7 @@ p{
    position: relative;
    background-repeat: no-repeat;
    width: 220px;
-   height: 150px;
+  
    border-radius: 8px;
 }
 
@@ -52,7 +52,7 @@ p{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:680px){
    .container{
      justify-content: space-evenly;
    }
