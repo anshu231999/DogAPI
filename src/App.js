@@ -6,12 +6,16 @@ import Add1 from './Add1.jpg';
 import add2 from './add2.jpg';  
 function App() {
   const [post, setPost] = useState([]);
+
   const imgLink=[add,Add1,add2];
   const link="https://dog.ceo/api/breeds/list/all";
+  //const link1="http://localhost:8080/mens";
  useEffect(() => {
     
     axios.get(link).then((response) => {
+      console.log(response);
         //response.data.message.map((dog,key) => console.log(dog));
+        
          const newPost=[];
           for(var i in response.data.message)
           {
@@ -31,11 +35,13 @@ function App() {
                    // setPost(...+(i)); 
                 }      
        } 
+
        setPost(post=>newPost);    
-     
+
    
     });           
-  },[]);  
+  },[]); 
+  
   const listNames = post.map((breed,key)=>                
   <>    
    
@@ -48,7 +54,7 @@ function App() {
     </div> 
    
    </>   
-  );    
+  );   
   return (   
     <div className="App">                                                          
     <h1>Dog Breed</h1>  
