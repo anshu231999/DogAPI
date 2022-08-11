@@ -9,11 +9,12 @@
 .container{
  
    border: 10px;
-  display: flex;
+   display: flex;
    row-gap: 5px;
    padding: 10px;
    flex-direction: row;
    flex-wrap: wrap;
+   justify-content: space-evenly;
    column-gap: 10px;
    
 }
